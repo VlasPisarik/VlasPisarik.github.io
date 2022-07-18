@@ -1,2 +1,2 @@
-# VlasPisarik.github.io
+# Влас Писарик
 Мой первый сайт
