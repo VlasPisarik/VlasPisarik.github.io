@@ -1,0 +1,440 @@
+body{
+    font-family: Arial, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #344051;
+}
+
+.logo{
+    color: #fff;
+    font-size: 28px;
+    line-height: 60px;
+    padding-left: 388px;
+    float:left;
+}
+
+.menu{
+    float: left;
+    padding-left: 432px;
+}
+
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat; 
+    
+}
+
+.title{
+    float: left;
+    margin: 432px 0px 0px 404px;
+    color: #2c384a;
+    text-align: center;
+}
+.title h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.title h4{
+    font-size: 22px;
+    margin-top: 40px;
+    color: #8b929c;
+}
+.title input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 58px 14px 0px 14px;
+}
+.block1{
+    float: left;
+    width: 100%;
+    height: 716px;
+    background: url(../img/boy1.png) 50% 224px/auto 205px no-repeat, url(../img/icon.download.png) 897px 595px/auto no-repeat, url(../img/underline.png) 50% 161px/auto no-repeat, url(../img/bg1.jpg) center/cover no-repeat;
+}
+.block1 h2{
+    font-size: 33px;
+    color: #263244;
+    text-align: center;
+    margin-top: 108px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.block1 p1{
+    text-align: left;
+    font-size: 16px;
+    margin: 318px 596px 22px 596px;
+    display: block;
+    color: #3f495a
+}
+.block1 p2{
+    text-align: left;
+    font-size: 16px;
+    margin: 22px 596px auto 596px;
+    display: block;
+    color: #3f495a
+}
+.block1 input{
+    height: 32px;
+    text-align: center;
+    border: 2px solid #6f707e;
+    background: none;
+    border-radius: 5px;
+    color: #7b7c88;
+    font-size: 12px;
+    padding: 0px 12px 0px 32px;
+    margin: 38px 877px 0px 885px;
+    font-weight:  bold;
+}
+.block2 {
+    float: left;
+    width: 100%;
+    height: 522px;
+    background:url(../img/grammofon.png) 1375px 268px/auto no-repeat,url(../img/rocket.png) 1085px 265px/auto no-repeat, url(../img/znak.png) 788px 271px/auto no-repeat, url(../img/laptop.png) 495px 275px/auto no-repeat, url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/bg2.jpg) center/cover no-repeat;
+}
+.block2 h2{
+    font-size: 33px;
+    color: #263244;
+    text-align: center;
+    margin-top: 108px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.block2 h3{
+    color: #cf7600;
+    font-size: 19px;
+    font-weight: bold;
+}
+.block2 p{
+    font-size:16px;
+    display: block;
+    margin-top: 20px;
+    color: #4e5766;
+}
+.veb {
+    margin: 217px 0px 0px 416px;
+    float: left;
+    text-align: center;
+    width: 210px;
+}
+.develop {
+    margin: 217px 0px 0px 82px;
+    float: left;
+    text-align: center;
+    width: 210px;
+}
+.ceo {
+    margin: 217px 0px 0px 82px;
+    float: left;
+    text-align: center;
+    width: 210px;
+}
+.market {
+    margin: 217px 0px 0px 82px;
+    float: left;
+    text-align: center;
+    width: 210px;
+}
+.block3 {
+    float: left;
+    width: 100%;
+    height: 100%;
+    background:url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/site1.jpg) 0px 252px/auto no-repeat;
+}
+.block3 h2{
+    font-size: 33px;
+    color: #263244;
+    text-align: center;
+    margin-top: 108px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.block3 p{
+    float: left;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    color: #4e5766;
+    margin-top: 60px;
+    width: 100%;
+}
+.info {
+    margin: 667px 0px 0px 387px;
+    float: left;
+}
+.info h4 {
+    float: left;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #384354;
+    font-weight: bold;
+}
+.info p {
+    float: left;
+    display: block;
+    font-size: 16px;
+    color: #4e5766;
+    margin: 14px 0px 15px 0px;
+    text-align: left;
+}
+.info a {
+    height: 44px;
+    text-align: center;
+    background: #63b5ae;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    padding: 12px 20px;
+    margin: 0px 0px 0px 0px;
+    width: 202px;
+    display: block;
+}
+.project {
+    float: left;
+    margin: 667px 0px 0px -500px;
+    width: 600;
+}
+.project h4{
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+}
+.project p1{
+    display: block;
+    margin: 34px 0px 0px 0px;
+    font-size: 20px;
+    color: #4e5766;
+}
+.calculator {
+    float: left;
+    width: 100%;
+    height: 1200px;
+    background: url(../img/bigunderline.png) 50% 967px/auto no-repeat;
+}
+.calculator h2{
+    font-size: 33px;
+    color: #263244;
+    text-align: center;
+    margin-top: 337px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.calculator h3{
+    float: left;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: 506px;
+    width: 870px
+    color: #1c2534;
+}
+.calculator p {
+    display: block;
+}
+.calculator select {
+    height: 58px;
+    text-align: left;
+    background: #eeeeee;
+    color: #6d7682;
+    font-size: 15px;
+    padding: 0px 16px;
+    margin: 26px 0px 20px 0px;
+    width: 890px;
+    margin-left: 506px;
+}
+.calculator p1{
+    display: block;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.stats{
+    float: left;
+    height: 499px;
+    width: 100%;
+    background:url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/bg3.jpg) 100% 100%/auto no-repeat;
+}
+.stats h2{
+   font-size: 33px;
+    color: #263244;
+    text-align: center;
+    margin-top: 108px;
+    text-transform: uppercase;
+    font-weight: bold; 
+}
+.stats p{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.stats b{
+    font-size: 37px;
+    font-weight: bold;
+    margin: 33px 0px 33px 0px;
+    display: block;
+}
+.stats .client {
+    float: left;
+    margin: 120px 0px 0px 380px;
+    text-align: center;
+    font-size: 16px;
+}
+.stats .clock {
+    float: left;
+    margin: 125px 0px 0px 156px;
+    text-align: center;
+    font-size: 16px;
+}
+.stats .proj {
+    float: left;
+    margin: 124px 0px 0px 156px;
+    text-align: center;
+    font-size: 16px;
+}
+.stats .achive {
+    float: left;
+    margin: 120px 0px 0px 156px;
+    text-align: center;
+    font-size: 16px;
+}
+.comments {
+    float: left;
+    height: 592px;
+    width: 100%;
+    background:url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/boy3.png) 50% 50%/auto no-repeat;
+}
+.comments h2 {
+    font-size: 33px;
+    color: #263244;
+    text-align: center;
+    margin-top: 108px;
+    text-transform: uppercase;
+    font-weight: bold; 
+}
+.comment1 {
+    float: left;
+    text-align: center;
+    margin: 233px 615px 0px 615px;
+    display: block;
+    color: #243042;
+}
+.peoples {
+    display: block;
+    float: left;
+    text-align: center;
+    margin: 36px 842px;
+    font-size: 16px;
+    color: #243042;
+}
+.form_radio {
+    margin-bottom: 20px;
+    display: inline;
+    margin: 100px 100px
+}
+.form_radio input {
+    display: none;
+}
+.form_radio label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 20px;
+    margin-right: 0px;
+    line-height: 25px;
+    user-select: none;
+}
+.contacts {
+    float: left;
+    width: 100%;
+    height: 808px;
+    background:url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/bg4.jpg) 100%/auto no-repeat;
+}
+.contacts h2{
+    font-size: 33px;
+    color: white;
+    text-align: center;
+    margin-top: 108px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.contact_info{
+    margin-top: 69px;
+    color: white;
+    float: left
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+.my_info {
+    margin: 48px 653px;
+    display: flex;
+    justify-content: space-between;
+}
+.mycontact {
+    font-size: 16px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-overflow: 10px;
+}
+.contacts h4 {
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+.anketa {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 44px;
+}
+.anketa input{
+    width: 352px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 14px;
+    margin: 0px 14px 14px 14px;
+    background: rgba(249, 250, 255, 0.80);
+}
+.anketa {
+    color: 5d5d5e;
+}
+.message input{
+    width: 736px;
+    height: 92px;
+    padding-top: 0px;
+}
+.send {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.send input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid white;
+    background: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 20px 14px 0px 14px;
