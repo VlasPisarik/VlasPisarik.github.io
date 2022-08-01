@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'FranklinGot';
+	src: url('../fonts/framd.eot');
+	src: local('☺'), url('../fonts/framd.woff') format('woff'), url('../fonts/framd.ttf') format('truetype'), url('../fonts/framd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 body{
     font-family: Arial, sans-serif;
 }
@@ -5,6 +12,8 @@ nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
+    z-index: 30;
 }
 
 .logo{
@@ -13,60 +22,66 @@ nav{
     line-height: 60px;
     padding-left: 388px;
     float:left;
+    -webkit-animation: coming 3s ease;
+    -o-animation: coming 3s ease;
+    animation: coming 3s ease;
+    font-family: 'FranklinGot', sans-serif;
 }
 
 .menu{
     float: left;
     padding-left: 432px;
 }
-
-.menu li{
-    float: left;
-    line-height: 60px;
-    color: #fff;
-    margin-right: 40px;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
 .main{
+    float: left;
     width: 100%;
-    height: calc(100% - 60px);
+    height: 1000px;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat; 
     
 }
 
 .title{
     float: left;
-    margin: 432px 0px 0px 404px;
+    margin: 380px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
 }
 .title h1{
-    font-size: 50px;
+    font-size: 58px;
     font-weight: bold;
 }
 .title h4{
-    font-size: 22px;
+    font-size: 26px;
     margin-top: 40px;
     color: #8b929c;
 }
-.title input{
-    height: 40px;
+.title button{
+    height: 50px;
+    width: 200px;
     text-align: center;
     border: 2px solid #6d7682;
-    background: none;
+    background: transparent;
     border-radius: 5px;
     color: #6d7682;
-    font-size: 13px;
+    font-size: 16px;
     padding: 0px 16px;
     margin: 58px 14px 0px 14px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
 }
 .block1{
     float: left;
     width: 100%;
     height: 716px;
-    background: url(../img/boy1.png) 50% 224px/auto 205px no-repeat, url(../img/icon.download.png) 897px 595px/auto no-repeat, url(../img/underline.png) 50% 161px/auto no-repeat, url(../img/bg1.jpg) center/cover no-repeat;
+    background: url(../img/boy1.png) 50% 224px/auto 205px no-repeat, url(../img/underline.png) 50% 161px/auto no-repeat, url(../img/bg1.jpg) center/cover no-repeat;
 }
 .block1 h2{
     font-size: 33px;
@@ -90,25 +105,31 @@ nav{
     display: block;
     color: #3f495a
 }
-.block1 input{
+.block1 button{
     height: 32px;
-    text-align: center;
+    width: 180px;
     border: 2px solid #6f707e;
-    background: none;
+    background: transparent;
     border-radius: 5px;
     color: #7b7c88;
     font-size: 12px;
-    padding: 0px 12px 0px 32px;
-    margin: 38px 877px 0px 885px;
+    padding: 0px 12px 0px 12px;
+    margin: 38px 860px;
     font-weight:  bold;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
 }
-.block2 {
+.block1 img{
+    margin-right: 10px;
+}
+.skills_container {
     float: left;
     width: 100%;
     height: 522px;
-    background:url(../img/grammofon.png) 1375px 268px/auto no-repeat,url(../img/rocket.png) 1085px 265px/auto no-repeat, url(../img/znak.png) 788px 271px/auto no-repeat, url(../img/laptop.png) 495px 275px/auto no-repeat, url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/bg2.jpg) center/cover no-repeat;
+    background: url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/bg2.jpg) center/cover no-repeat;
 }
-.block2 h2{
+.skills_container h2{
     font-size: 33px;
     color: #263244;
     text-align: center;
@@ -116,40 +137,35 @@ nav{
     text-transform: uppercase;
     font-weight: bold;
 }
-.block2 h3{
+.skills{
+    margin: 4% 440px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.skill img {
+    margin: 40px;
+}
+.skills h3{
     color: #cf7600;
     font-size: 19px;
     font-weight: bold;
 }
-.block2 p{
+.skills p{
     font-size:16px;
     display: block;
     margin-top: 20px;
     color: #4e5766;
-}
-.veb {
-    margin: 217px 0px 0px 416px;
-    float: left;
     text-align: center;
-    width: 210px;
 }
-.develop {
-    margin: 217px 0px 0px 82px;
-    float: left;
+.skill{
     text-align: center;
+    display: block;
     width: 210px;
-}
-.ceo {
-    margin: 217px 0px 0px 82px;
-    float: left;
-    text-align: center;
-    width: 210px;
-}
-.market {
-    margin: 217px 0px 0px 82px;
-    float: left;
-    text-align: center;
-    width: 210px;
+    -webkit-animation: leftshift 1s ease forwards;
+    -o-animation: leftshift 1s ease forwards;
+    animation: leftshift 1s ease forwards; 
+    opacity: 0;
 }
 .block3 {
     float: left;
@@ -198,7 +214,7 @@ nav{
     margin: 14px 0px 15px 0px;
     text-align: left;
 }
-.info a {
+.info button {
     height: 44px;
     text-align: center;
     background: #63b5ae;
@@ -209,6 +225,7 @@ nav{
     margin: 0px 0px 0px 0px;
     width: 202px;
     display: block;
+    margin-top: 130px;
 }
 .info2{
     float: left;
@@ -228,14 +245,23 @@ nav{
 .calculator {
     float: left;
     width: 100%;
-    height: 1200px;
-    background: url(../img/bigunderline.png) 50% 967px/auto no-repeat;
+    height: 1500px;
+    background: url(../img/bigunderline.png) 50% 1020px/auto no-repeat;
+    padding: 300px;
+    
 }
+.calculator_box {width: 1080px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    margin: 0 auto;
+    padding-top: 74px;
+    }
 .calculator h2{
     font-size: 33px;
     color: #263244;
     text-align: center;
-    margin-top: 337px;
+    margin-top: 0px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -245,7 +271,7 @@ nav{
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 60px;
-    margin-left: 506px;
+    margin-left: 95px;
     width: 870px
     color: #1c2534;
 }
@@ -261,19 +287,38 @@ nav{
     padding: 0px 16px;
     margin: 26px 0px 20px 0px;
     width: 890px;
-    margin-left: 506px;
+    margin-left: 95px;
 }
-.calculator p1{
+.calculator p{
     display: block;
     text-align: justify;
     margin-top: 20px;
     font-size: 20px;
 }
+.calculator .text {
+    float: left;
+}
+.calculator .digit {
+    float: right;
+}
 .stats{
     float: left;
     height: 499px;
     width: 100%;
-    background:url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/bg3.jpg) 100% 100%/auto no-repeat;
+    background: url(../img/bg3.jpg) center/cover fixed no-repeat;
+}
+.mystats{
+    margin: 100px 250px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+.stat {
+    display: block;
+    text-align: center;
+}
+.stat img{
+    height: 54px;*
 }
 .stats h2{
    font-size: 33px;
@@ -292,30 +337,6 @@ nav{
     font-weight: bold;
     margin: 33px 0px 33px 0px;
     display: block;
-}
-.stats .client {
-    float: left;
-    margin: 120px 0px 0px 380px;
-    text-align: center;
-    font-size: 16px;
-}
-.stats .clock {
-    float: left;
-    margin: 125px 0px 0px 156px;
-    text-align: center;
-    font-size: 16px;
-}
-.stats .proj {
-    float: left;
-    margin: 124px 0px 0px 156px;
-    text-align: center;
-    font-size: 16px;
-}
-.stats .achive {
-    float: left;
-    margin: 120px 0px 0px 156px;
-    text-align: center;
-    font-size: 16px;
 }
 .comments {
     float: left;
@@ -346,22 +367,43 @@ nav{
     font-size: 16px;
     color: #243042;
 }
-.form_radio {
-    margin-bottom: 20px;
-    display: inline;
-    margin: 100px 100px
+.radio {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    vertical-align: middle;
+    color: #fff;
+    position: relative;
+    padding-left: 30px;
 }
-.form_radio input {
+.radio + .radio {
+    margin-left: 20px;
+}
+.radio input(type="radio"){
     display: none;
 }
-.form_radio label {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    padding-left: 20px;
-    margin-right: 0px;
-    line-height: 25px;
-    user-select: none;
+.radio span{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid #00aaef;
+    display: block;
+    position: absolute;
+    top 7px;
+}
+.radio span:after{
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #00aeef;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top 50%;
+    transform: translate(-50%,-50%) scale(0);
+    border-radius: 50%; 
+    transition: 300ms;
 }
 .contacts {
     float: left;
@@ -396,6 +438,9 @@ nav{
     color: white;
     text-align: center;
     text-overflow: 10px;
+}
+.mycontact img{
+    margin: 16px;
 }
 .contacts h4 {
     float: left;
@@ -441,4 +486,143 @@ nav{
     color: white;
     font-size: 13px;
     padding: 0px 16px;
-    margin: 20px 14px 0px 14px;
+    margin: 10px 14px 0px 14px;
+    }
+.map {
+    background: url(../img/map.jpg) center/cover no-repeat;
+    height: 356px;
+    width: 100%;
+    float: left;
+    display: block;
+}
+footer1 {
+    height: 94px;
+    width: 100%;
+    float: left;
+    background-color: #354051;
+}
+footer1 p{
+   text-align: center;
+    line-height: 94px;
+    color: white;
+}
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards; 
+    opacity: 0;
+}
+.menu li a{
+    transition:all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+    
+}
+.menu li a:visited {
+    color: white;
+}
+.menu li a:hover {
+    color: #e88604;
+    transform: scale(1.1)
+    
+}
+.menu li a:active {
+    ;
+}
+.title button{
+    transition: all 0.5s;
+    transform: scale(1)
+}
+.title button:hover{
+    color: white;
+    background: #344051;
+}
+.title button:active{
+    transform: scale(1.1)
+}
+@keyframes coming{
+    from{
+    opacity:0;
+    }
+    to{
+    opacity:1;
+    }
+}
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
+.block1 button{
+    transition: all 0.5s ease;
+    transform: scale(1);
+    display: inline-block;
+}
+.block1 button:hover{
+    transform: scale(1.2);
+    border-color: #e88604;
+    color: #e88604;
+}
+.block1 button:active{
+    border-color: #7b7c88;
+    color: #7b7c88;
+}
+@keyframes leftshift{
+    from{
+       opacity: 0;
+       margin-left: -1000px;
+    }
+    to{
+       opacity: 1;
+       margin-left: 0px;
+    }
+}
+.skill:nth-child(2){
+    animation-delay: 1s;
+}
+.skill:nth-child(3){
+    animation-delay: 2s;
+}
+.skill:nth-child(4){
+    animation-delay: 3s;
+}
+.skill:nth-child(5){
+    animation-delay: 4s;
+}
