@@ -1,14 +1,16 @@
 @font-face {
-	font-family: 'FranklinGot';
-	src: url('../fonts/framd.eot');
-	src: local('☺'), url('../fonts/framd.woff') format('woff'), url('../fonts/framd.ttf') format('truetype'), url('../fonts/framd.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'FranklinGot';
+    src: url('../fonts/framd.eot');
+    src: local('☺'), url('../fonts/framd.woff') format('woff'), url('../fonts/framd.ttf') format('truetype'), url('../fonts/framd.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-body{
+
+body {
     font-family: Arial, sans-serif;
 }
-nav{
+
+nav {
     width: 100%;
     height: 60px;
     background: #344051;
@@ -16,35 +18,57 @@ nav{
     z-index: 30;
 }
 
-.logo{
+.logo {
     color: #fff;
     font-size: 28px;
     line-height: 60px;
-    padding-left: 388px;
-    float:left;
+    float: left;
     -webkit-animation: coming 3s ease;
     -o-animation: coming 3s ease;
     animation: coming 3s ease;
     font-family: 'FranklinGot', sans-serif;
 }
 
-.menu{
+.menu {
     float: left;
-    padding-left: 432px;
-}
-.main{
-    float: left;
-    width: 100%;
-    height: 1000px;
-    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat; 
-    
 }
 
-.title{
+.menu li {
     float: left;
-    margin: 380px 0px 0px 404px;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
+    font-family: 'FranklinGot', sans-serif;
+}
+
+
+.menu li a {
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.main {
+    width: 100%;
+    height: 1000px;
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+
+}
+
+.title {
+    float: left;
     color: #2c384a;
     text-align: center;
+    width: 100%;
     opacity: 0;
     -webkit-animation: titlemove 1s ease forwards;
     -o-animation: titlemove 1s ease forwards;
@@ -52,17 +76,22 @@ nav{
     -webkit-animation-delay: 2s;
     -o-animation-delay: 2s;
     animation-delay: 2s;
+    font-family: 'FranklinGot', sans-serif;
 }
-.title h1{
-    font-size: 58px;
-    font-weight: bold;
+
+.title h1 {
+    font-family: 'FranklinGot', sans-serif;
+    font-size: 72px;
+    font-weight: 600;
 }
-.title h4{
+
+.title h4 {
     font-size: 26px;
     margin-top: 40px;
     color: #8b929c;
 }
-.title button{
+
+.title button {
     height: 50px;
     width: 200px;
     text-align: center;
@@ -77,35 +106,51 @@ nav{
     position: relative;
     cursor: pointer;
 }
-.block1{
-    float: left;
+
+.block1 {
+    
     width: 100%;
     height: 716px;
-    background: url(../img/boy1.png) 50% 224px/auto 205px no-repeat, url(../img/underline.png) 50% 161px/auto no-repeat, url(../img/bg1.jpg) center/cover no-repeat;
+    background:url(../img/underline.png) 50% 161px/auto no-repeat, url(../img/bg1.jpg) center/cover no-repeat;
 }
-.block1 h2{
+
+.block1 h2 {
     font-size: 33px;
+    font-family: 'FranklinGot', sans-serif;
     color: #263244;
     text-align: center;
-    margin-top: 108px;
+    padding-top: 108px;
     text-transform: uppercase;
     font-weight: bold;
 }
-.block1 p1{
+.about{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.about img{
+    margin: 10px;
+}
+
+.block1 p1 {
     text-align: left;
-    font-size: 16px;
-    margin: 318px 596px 22px 596px;
+    font-size: 17px;
+    font-family: 'Calibri', sans-serif;
+    margin-top: 10px;
     display: block;
     color: #3f495a
 }
-.block1 p2{
+
+.block1 p2 {
     text-align: left;
-    font-size: 16px;
-    margin: 22px 596px auto 596px;
+    font-size: 17px;
+    font-family: 'Calibri', sans-serif;
+    margin-top: 22px ;
     display: block;
     color: #3f495a
 }
-.block1 button{
+
+.block1 button {
     height: 32px;
     width: 180px;
     border: 2px solid #6f707e;
@@ -113,91 +158,111 @@ nav{
     border-radius: 5px;
     color: #7b7c88;
     font-size: 12px;
+    font-family: 'FranklinGot', sans-serif;
     padding: 0px 12px 0px 12px;
-    margin: 38px 860px;
-    font-weight:  bold;
+    margin-top: 38px ;
     overflow: hidden;
     position: relative;
     cursor: pointer;
 }
-.block1 img{
+
+.block1 img {
     margin-right: 10px;
 }
+
 .skills_container {
-    float: left;
     width: 100%;
     height: 522px;
     background: url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/bg2.jpg) center/cover no-repeat;
 }
-.skills_container h2{
+
+.skills_container h2 {
     font-size: 33px;
+    font-family: 'FranklinGot', sans-serif;
     color: #263244;
     text-align: center;
-    margin-top: 108px;
+    padding-top: 108px;
     text-transform: uppercase;
     font-weight: bold;
 }
-.skills{
-    margin: 4% 440px;
+
+.skills {
+    margin-top: 4%;
     display: flex;
     justify-content: space-between;
-    
+
 }
+
 .skill img {
-    margin: 40px;
+    margin: 30px;
 }
-.skills h3{
+
+.skills h3 {
     color: #cf7600;
     font-size: 19px;
-    font-weight: bold;
+    font-family: 'FranklinGot', sans-serif;
 }
-.skills p{
-    font-size:16px;
+
+.skills p {
+    font-size: 17px;
     display: block;
     margin-top: 20px;
     color: #4e5766;
     text-align: center;
+    font-family: 'Calibri', sans-serif;
 }
-.skill{
+
+.skill {
     text-align: center;
     display: block;
     width: 210px;
     -webkit-animation: leftshift 1s ease forwards;
     -o-animation: leftshift 1s ease forwards;
-    animation: leftshift 1s ease forwards; 
+    animation: leftshift 1s ease forwards;
     opacity: 0;
 }
+
 .block3 {
     float: left;
     width: 100%;
-    height: 1000px;
-    background:url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/site1.jpg) 0px 252px/auto no-repeat;
+    height: 1200px;
+    background: url(../img/underline.png) 50% 160px/auto no-repeat;
 }
-.block3 h2{
+
+.block3 h2 {
     font-size: 33px;
+    font-family: 'FranklinGot', sans-serif;
     color: #263244;
     text-align: center;
     margin-top: 108px;
     text-transform: uppercase;
     font-weight: bold;
 }
-.block3 p{
+
+.block3 p {
     float: left;
     text-align: center;
+    font-family: 'Calibri', sans-serif;
     display: block;
-    font-size: 16px;
+    font-size: 17px;
     color: #4e5766;
-    margin-top: 60px;
+    margin-top: 45px;
     width: 100%;
 }
+
 .info {
-    margin-top: 667px;
-    width: 1170px; 
-    justify-content: space-between;
+    margin-top: 45px;
+    width: 100%;
     display: flex;
     float: left;
     text-align: center;
-    margin-left: 387px;
+}
+.info1{
+    width: 300px;
+}
+.info2{
+    width: 850px;
+    margin-left: 68px;
 }
 .info h4 {
     float: left;
@@ -206,13 +271,17 @@ nav{
     color: #384354;
     font-weight: bold;
 }
+
 .info p {
     float: left;
     display: block;
-    font-size: 16px;
+    font-size: 17px;
     color: #4e5766;
     margin: 14px 0px 15px 0px;
     text-align: left;
+}
+.info2 p {
+    font-size: 20px;
 }
 .info button {
     height: 44px;
@@ -221,43 +290,35 @@ nav{
     border-radius: 5px;
     color: #fff;
     font-size: 20px;
-    padding: 12px 20px;
+    padding: 8px 20px;
     margin: 0px 0px 0px 0px;
     width: 202px;
     display: block;
     margin-top: 130px;
 }
-.info2{
+
+.info2 {
     float: left;
     display: block;
 }
-.project h4{
-    float: left;
-    font-size: 25px;
-    font-weight: bold;
-}
-.project p1{
-    display: block;
-    margin: 34px 0px 0px 0px;
-    font-size: 20px;
-    color: #4e5766;
-}
+
 .calculator {
     float: left;
     width: 100%;
     height: 1500px;
-    background: url(../img/bigunderline.png) 50% 1020px/auto no-repeat;
     padding: 300px;
-    
+
 }
-.calculator_box {width: 1080px;
+
+.calculator_box {
     -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
     margin: 0 auto;
     padding-top: 74px;
-    }
-.calculator h2{
+}
+
+.calculator h2 {
     font-size: 33px;
     color: #263244;
     text-align: center;
@@ -265,19 +326,21 @@ nav{
     text-transform: uppercase;
     font-weight: bold;
 }
-.calculator h3{
+
+.calculator h3 {
     float: left;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 60px;
     margin-left: 95px;
-    width: 870px
-    color: #1c2534;
+    width: 870px color: #1c2534;
 }
+
 .calculator p {
     display: block;
 }
+
 .calculator select {
     height: 58px;
     text-align: left;
@@ -289,69 +352,83 @@ nav{
     width: 890px;
     margin-left: 95px;
 }
-.calculator p{
+
+.calculator p {
     display: block;
     text-align: justify;
     margin-top: 20px;
     font-size: 20px;
 }
+
 .calculator .text {
     float: left;
 }
+
 .calculator .digit {
     float: right;
 }
-.stats{
+
+.stats {
     float: left;
     height: 499px;
     width: 100%;
     background: url(../img/bg3.jpg) center/cover fixed no-repeat;
 }
-.mystats{
+
+.mystats {
     margin: 100px 250px;
     display: flex;
     justify-content: space-between;
     font-weight: bolder;
 }
+
 .stat {
     display: block;
     text-align: center;
 }
-.stat img{
-    height: 54px;*
+
+.stat img {
+    height: 54px;
+    *
 }
-.stats h2{
-   font-size: 33px;
+
+.stats h2 {
+    font-size: 33px;
     color: #263244;
     text-align: center;
     margin-top: 108px;
     text-transform: uppercase;
-    font-weight: bold; 
+    font-weight: bold;
 }
-.stats p{
+
+.stats p {
     font-size: 16px;
     text-transform: uppercase;
 }
-.stats b{
+
+.stats b {
     font-size: 37px;
     font-weight: bold;
     margin: 33px 0px 33px 0px;
     display: block;
 }
+
 .comments {
     float: left;
     height: 592px;
     width: 100%;
-    background:url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/boy3.png) 50% 50%/auto no-repeat;
+    background: url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/boy3.png) 50% 50%/auto no-repeat;
 }
+
 .comments h2 {
     font-size: 33px;
     color: #263244;
     text-align: center;
     margin-top: 108px;
     text-transform: uppercase;
-    font-weight: bold; 
+    font-weight: bold;
 }
+
 .comment1 {
     float: left;
     text-align: center;
@@ -359,6 +436,7 @@ nav{
     display: block;
     color: #243042;
 }
+
 .peoples {
     display: block;
     float: left;
@@ -367,6 +445,7 @@ nav{
     font-size: 16px;
     color: #243042;
 }
+
 .radio {
     display: inline-block;
     font-size: 24px;
@@ -377,13 +456,16 @@ nav{
     position: relative;
     padding-left: 30px;
 }
+
 .radio + .radio {
     margin-left: 20px;
 }
-.radio input(type="radio"){
+
+.radio input(type="radio") {
     display: none;
 }
-.radio span{
+
+.radio span {
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -392,7 +474,8 @@ nav{
     position: absolute;
     top 7px;
 }
-.radio span:after{
+
+.radio span:after {
     content: "";
     height: 8px;
     width: 8px;
@@ -401,17 +484,19 @@ nav{
     position: absolute;
     left: 50%;
     top 50%;
-    transform: translate(-50%,-50%) scale(0);
-    border-radius: 50%; 
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
     transition: 300ms;
 }
+
 .contacts {
     float: left;
     width: 100%;
     height: 808px;
-    background:url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/bg4.jpg) 100%/auto no-repeat;
+    background: url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/bg4.jpg) 100%/auto no-repeat;
 }
-.contacts h2{
+
+.contacts h2 {
     font-size: 33px;
     color: white;
     text-align: center;
@@ -419,19 +504,21 @@ nav{
     text-transform: uppercase;
     font-weight: bold;
 }
-.contact_info{
+
+.contact_info {
     margin-top: 69px;
     color: white;
-    float: left
-    font-size: 16px;
+    float: left font-size: 16px;
     display: block;
     text-align: center;
 }
+
 .my_info {
     margin: 48px 653px;
     display: flex;
     justify-content: space-between;
 }
+
 .mycontact {
     font-size: 16px;
     display: block;
@@ -439,9 +526,11 @@ nav{
     text-align: center;
     text-overflow: 10px;
 }
-.mycontact img{
+
+.mycontact img {
     margin: 16px;
 }
+
 .contacts h4 {
     float: left;
     color: white;
@@ -450,13 +539,15 @@ nav{
     width: 100%;
     text-align: center;
 }
+
 .anketa {
     float: left;
     width: 100%;
     text-align: center;
     margin-top: 44px;
 }
-.anketa input{
+
+.anketa input {
     width: 352px;
     height: 40px;
     font-size: 16px;
@@ -464,20 +555,24 @@ nav{
     margin: 0px 14px 14px 14px;
     background: rgba(249, 250, 255, 0.80);
 }
+
 .anketa {
     color: 5d5d5e;
 }
-.message input{
+
+.message input {
     width: 736px;
     height: 92px;
     padding-top: 0px;
 }
+
 .send {
     width: 100%;
     float: left;
     text-align: center;
 }
-.send input{
+
+.send input {
     height: 40px;
     text-align: center;
     border: 2px solid white;
@@ -487,7 +582,8 @@ nav{
     font-size: 13px;
     padding: 0px 16px;
     margin: 10px 14px 0px 14px;
-    }
+}
+
 .map {
     background: url(../img/map.jpg) center/cover no-repeat;
     height: 356px;
@@ -495,134 +591,170 @@ nav{
     float: left;
     display: block;
 }
+
 footer1 {
     height: 94px;
     width: 100%;
     float: left;
     background-color: #354051;
 }
-footer1 p{
-   text-align: center;
+
+footer1 p {
+    text-align: center;
     line-height: 94px;
     color: white;
 }
-.menu li{
-    float: left;
-    line-height: 60px;
-    color: #fff;
-    margin-right: 40px;
-    font-size: 16px;
-    text-transform: uppercase;
-    -webkit-animation: topshift 0.4s ease forwards;
-    -o-animation: topshift 0.4s ease forwards;
-    animation: topshift 0.4s ease forwards; 
-    opacity: 0;
-}
-.menu li a{
-    transition:all 0.1s;
-    color: white;
-    transform: scale(1);
-    display: inline-block;
-    
-}
+
+
 .menu li a:visited {
     color: white;
 }
+
 .menu li a:hover {
     color: #e88604;
     transform: scale(1.1)
-    
 }
+
 .menu li a:active {
     ;
 }
-.title button{
+
+.title button {
     transition: all 0.5s;
     transform: scale(1)
 }
-.title button:hover{
+
+.title button:hover {
     color: white;
     background: #344051;
 }
-.title button:active{
+
+.title button:active {
     transform: scale(1.1)
 }
-@keyframes coming{
-    from{
-    opacity:0;
+
+@keyframes coming {
+    from {
+        opacity: 0;
     }
-    to{
-    opacity:1;
+
+    to {
+        opacity: 1;
     }
 }
-@keyframes topshift{
-    from{
+
+@keyframes topshift {
+    from {
         opacity: 0;
         margin-top: -80px;
     }
-    to{
+
+    to {
         opacity: 1;
         margin-top: 0px;
     }
 }
-.menu li:nth-child(2){
+
+.menu li:nth-child(2) {
     animation-delay: 0.4s;
 }
-.menu li:nth-child(3){
+
+.menu li:nth-child(3) {
     animation-delay: 0.8s;
 }
-.menu li:nth-child(4){
+
+.menu li:nth-child(4) {
     animation-delay: 1.2s;
 }
-.menu li:nth-child(5){
+
+.menu li:nth-child(5) {
     animation-delay: 1.6s;
 }
-.menu li:nth-child(6){
+
+.menu li:nth-child(6) {
     animation-delay: 2s;
 }
-@keyframes titlemove{
-    from{
+
+@keyframes titlemove {
+    from {
         opacity: 0;
         margin-left: -500px;
     }
-    to{
+
+    to {
         opacity: 1;
-        margin-left: 404px;
+        margin-left: 0px;
     }
 }
-.block1 button{
+
+.block1 button {
     transition: all 0.5s ease;
     transform: scale(1);
     display: inline-block;
 }
-.block1 button:hover{
+
+.block1 button:hover {
     transform: scale(1.2);
     border-color: #e88604;
     color: #e88604;
 }
-.block1 button:active{
+
+.block1 button:active {
     border-color: #7b7c88;
     color: #7b7c88;
 }
-@keyframes leftshift{
-    from{
-       opacity: 0;
-       margin-left: -1000px;
+
+@keyframes leftshift {
+    from {
+        opacity: 0;
+        margin-left: -1000px;
     }
-    to{
-       opacity: 1;
-       margin-left: 0px;
+
+    to {
+        opacity: 1;
+        margin-left: 0px;
     }
 }
-.skill:nth-child(2){
+
+.skill:nth-child(2) {
     animation-delay: 1s;
 }
-.skill:nth-child(3){
+
+.skill:nth-child(3) {
     animation-delay: 2s;
 }
-.skill:nth-child(4){
+
+.skill:nth-child(4) {
     animation-delay: 3s;
 }
-.skill:nth-child(5){
+
+.skill:nth-child(5) {
     animation-delay: 4s;
+}
+
+.white-btn:visited{
+    color: #fff;
+}
+
+@media (max-width: 991px){
+    .title, .title h4, .title button{
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }
+    .title button{
+        border: 2px solid #fff;
+    }
+    .main {
+        position: relative;
+    }
+    .main::after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4);
+    }
 }
