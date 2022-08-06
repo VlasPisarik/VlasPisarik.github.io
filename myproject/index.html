@@ -121,7 +121,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carusel"><div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="src/img/site2.jpeg" class="d-block w-100" alt="...">
@@ -141,7 +141,7 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Следующий</span>
                         </button>
-                    </div>
+                    </div></div>
                     <div class="info">
 
                         <div class="info1">
@@ -150,7 +150,7 @@
                             <h4>Website:</h4>
                             <p>http://www.somedornain.com</p>
                             <button type="button" onclick="location.href='https://www.google.com'">
-                                VISIT LIVE SITE</button>
+                                Перейти на сайт</button>
                         </div>
                         <div class="info2">
                             <h4 class="Name_project">Название проекта</h4>
@@ -166,31 +166,34 @@
             <div class="row">
                 <div class="col-10 offset-1">
                 <div class="calculator_box">
+                   <div class="calculator_inside">
                     <h2>Расчёт стоимости</h2>
                     <h3>Тип сайта</h3>
-                    <p><select>
+                    <select>
                             <option disable>Выберите пункт...</option>
                             <option>Сайт1</option>
                             <option>Сайт2</option>
                             <option>Сайт3</option>
-                        </select></p>
+                        </select>
                     <h3>Дизайн</h3>
-                    <p><select>
+                    <select>
                             <option disable>Выберите пункт...</option>
                             <option>Дизайн1</option>
                             <option>Дизайн2</option>
                             <option>Дизайн3</option>
-                        </select></p>
+                        </select>
                     <h3>Адаптивность</h3>
-                    <p><select>
+                    <select>
                             <option disable>Выберите пункт...</option>
                             <option>Адаптивность1</option>
                             <option>Адаптивность2</option>
                             <option>Адаптивность3</option>
-                        </select></p>
-                    <p>Сроки 0</p>
+                        </select>
+                    <p class="calcline">Сроки 0</p>
                     <p>Стоимость 0</p>
-                </div></div>
+                    <button type="sumbit" >
+                                Оставить заявку</button>
+                </div></div></div>
             </div>
         </div>
     </div>
@@ -219,28 +222,22 @@
         </div>
     </div>
     <div class="comments">
-        <div>
+        
             <h2>Отзывы</h2>
             <p class="comment1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eum libero voluptate quia inventore doloremque reiciendis omnis perspiciatis commodi impedit quaerat consequatur ad ipsa, explicabo temporibus qui, vel earum quidem ipsam. Incidunt.</p>
             <p class="peoples"><b>Михаил</b>, ген директор ПАО"Газпром"</p>
-        </div>
-        <div class="form_radio">
-            <label class="radio">
-                <input type="radio" name="comments" value="1">
-                Radio button1
-                <span></span>
-            </label>
-            <label class="radio">
-                <input type="radio" name="comments" value="2">
-                Radio button2
-                <span></span>
-            </label>
-            <label class="radio">
-                <input type="radio" name="comments" value="3">
-                Radio button3
-                <span></span>
-            </label>
-        </div>
+            <div class="radio1"><div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">1</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2">2</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+  <label class="form-check-label" for="inlineRadio3">3 </label>
+</div></div>
     </div>
     <div class="contacts">
         <h2>Мои контакты</h2>
@@ -271,7 +268,15 @@
         </div>
     </div>
     <div class="map">
-        <p></p>
+        <script>
+            function iniMap() {
+                var location = {lat: 53.90571999990278, lng: 27.559677392817143}
+                var map = new google.maps.Map(document.getElementById("map"),{
+                    zoom: 4,
+                    center: location
+                });
+                }
+        </script>
     </div>
     <footer>
         <div class="footer1">

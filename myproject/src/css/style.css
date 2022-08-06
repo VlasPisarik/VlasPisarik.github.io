@@ -119,7 +119,7 @@ nav {
     font-family: 'FranklinGot', sans-serif;
     color: #263244;
     text-align: center;
-    padding-top: 108px;
+    padding-top: 100px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -181,7 +181,7 @@ nav {
     font-family: 'FranklinGot', sans-serif;
     color: #263244;
     text-align: center;
-    padding-top: 108px;
+    padding-top: 100px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -195,6 +195,7 @@ nav {
 
 .skill img {
     margin: 30px;
+    height: 45px;
 }
 
 .skills h3 {
@@ -223,7 +224,6 @@ nav {
 }
 
 .block3 {
-    float: left;
     width: 100%;
     height: 1200px;
     background: url(../img/underline.png) 50% 160px/auto no-repeat;
@@ -234,13 +234,12 @@ nav {
     font-family: 'FranklinGot', sans-serif;
     color: #263244;
     text-align: center;
-    margin-top: 108px;
+    padding-top: 100px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .block3 p {
-    float: left;
     text-align: center;
     font-family: 'Calibri', sans-serif;
     display: block;
@@ -303,7 +302,6 @@ nav {
 }
 
 .calculator {
-    float: left;
     width: 100%;
     height: 1500px;
     padding: 300px;
@@ -315,32 +313,30 @@ nav {
     -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
     margin: 0 auto;
-    padding-top: 74px;
+    height: 900px;
+}
+.calculator_inside{
+    padding: 45px 47px 0px 47px;
 }
 
 .calculator h2 {
     font-size: 33px;
     color: #263244;
     text-align: center;
-    margin-top: 0px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .calculator h3 {
-    float: left;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 60px;
-    margin-left: 95px;
+    margin-top: 50px;
     width: 870px color: #1c2534;
 }
-
-.calculator p {
-    display: block;
+.calcline{
+    padding-top: 35px;
 }
-
 .calculator select {
     height: 58px;
     text-align: left;
@@ -348,9 +344,8 @@ nav {
     color: #6d7682;
     font-size: 15px;
     padding: 0px 16px;
-    margin: 26px 0px 20px 0px;
-    width: 890px;
-    margin-left: 95px;
+    margin: 20px 0px 0px 0px;
+    width: 100%;
 }
 
 .calculator p {
@@ -358,6 +353,7 @@ nav {
     text-align: justify;
     margin-top: 20px;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .calculator .text {
@@ -368,8 +364,24 @@ nav {
     float: right;
 }
 
+.calculator button {
+    height: 44px;
+    text-align: center;
+    background: #63b5ae;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 20px;
+    margin: 0px 0px 0px 0px;
+    width: 202px;
+    display: block;
+    margin: 40px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .stats {
-    float: left;
     height: 499px;
     width: 100%;
     background: url(../img/bg3.jpg) center/cover fixed no-repeat;
@@ -389,14 +401,14 @@ nav {
 
 .stat img {
     height: 54px;
-    *
+    
 }
 
 .stats h2 {
     font-size: 33px;
     color: #263244;
     text-align: center;
-    margin-top: 108px;
+    padding-top: 108px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -414,7 +426,7 @@ nav {
 }
 
 .comments {
-    float: left;
+    
     height: 592px;
     width: 100%;
     background: url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/boy3.png) 50% 50%/auto no-repeat;
@@ -424,13 +436,12 @@ nav {
     font-size: 33px;
     color: #263244;
     text-align: center;
-    margin-top: 108px;
+    padding-top: 100px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .comment1 {
-    float: left;
     text-align: center;
     margin: 233px 615px 0px 615px;
     display: block;
@@ -439,82 +450,51 @@ nav {
 
 .peoples {
     display: block;
-    float: left;
     text-align: center;
     margin: 36px 842px;
     font-size: 16px;
     color: #243042;
 }
 
-.radio {
+.radio1 {
+    width: 100%;
     display: inline-block;
-    font-size: 24px;
+    font-size: 15px;
     font-weight: 500;
     text-transform: capitalize;
     vertical-align: middle;
     color: #fff;
-    position: relative;
-    padding-left: 30px;
-}
-
-.radio + .radio {
-    margin-left: 20px;
-}
-
-.radio input(type="radio") {
-    display: none;
-}
-
-.radio span {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 3px solid #00aaef;
-    display: block;
-    position: absolute;
-    top 7px;
-}
-
-.radio span:after {
-    content: "";
-    height: 8px;
-    width: 8px;
-    background: #00aeef;
-    display: block;
-    position: absolute;
-    left: 50%;
-    top 50%;
-    transform: translate(-50%, -50%) scale(0);
-    border-radius: 50%;
-    transition: 300ms;
+    text-align: center;
 }
 
 .contacts {
-    float: left;
     width: 100%;
     height: 808px;
     background: url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/bg4.jpg) 100%/auto no-repeat;
 }
 
 .contacts h2 {
-    font-size: 33px;
+    font-size: 34px;
     color: white;
     text-align: center;
-    margin-top: 108px;
+    padding-top: 100px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .contact_info {
-    margin-top: 69px;
+    margin-top: 48px;
     color: white;
-    float: left font-size: 16px;
+    font-size: 15.33px;
     display: block;
     text-align: center;
+    font-family: 'Calibri', sans-serif;
 }
 
 .my_info {
-    margin: 48px 653px;
+    margin-top: 25px;
+    margin-left: 653px;
+    margin-right: 653px;
     display: flex;
     justify-content: space-between;
 }
@@ -525,19 +505,21 @@ nav {
     color: white;
     text-align: center;
     text-overflow: 10px;
+    font-family: 'Calibri', sans-serif;
 }
 
 .mycontact img {
-    margin: 16px;
+    margin: 13px;
 }
 
 .contacts h4 {
-    float: left;
+    margin-top: 5px;
     color: white;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 21px;
     width: 100%;
     text-align: center;
+    font-family: 'FranklinGot', sans-serif;
 }
 
 .anketa {
@@ -552,7 +534,7 @@ nav {
     height: 40px;
     font-size: 16px;
     padding-left: 14px;
-    margin: 0px 14px 14px 14px;
+    margin: 0px 14px 0px 14px;
     background: rgba(249, 250, 255, 0.80);
 }
 
@@ -588,21 +570,20 @@ nav {
     background: url(../img/map.jpg) center/cover no-repeat;
     height: 356px;
     width: 100%;
-    float: left;
     display: block;
 }
 
-footer1 {
+.footer1 {
     height: 94px;
     width: 100%;
-    float: left;
     background-color: #354051;
 }
 
-footer1 p {
+.footer1 p {
     text-align: center;
     line-height: 94px;
     color: white;
+    font-family: 'arial';
 }
 
 
@@ -757,4 +738,12 @@ footer1 p {
         position: absolute;
         background: rgba(0,0,0,0.4);
     }
+}
+.calcline::before{
+    display: block;
+    width: 100%;
+    content: '';
+    position: static;
+    border-top: 2px solid #d6d6d6;
+    margin-bottom: 25px;
 }
