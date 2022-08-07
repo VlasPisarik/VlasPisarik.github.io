@@ -107,50 +107,37 @@ nav {
     cursor: pointer;
 }
 
-.block1 {
+.about_me_block{
     
-    width: 100%;
+    
     height: 716px;
     background:url(../img/underline.png) 50% 161px/auto no-repeat, url(../img/bg1.jpg) center/cover no-repeat;
 }
 
-.block1 h2 {
+.about_me_block h2 {
     font-size: 33px;
     font-family: 'FranklinGot', sans-serif;
     color: #263244;
-    text-align: center;
     padding-top: 100px;
     text-transform: uppercase;
     font-weight: bold;
 }
-.about{
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-}
-.about img{
-    margin: 10px;
+.about_me_block img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
 }
 
-.block1 p1 {
-    text-align: left;
+.about_me_block p {
     font-size: 17px;
     font-family: 'Calibri', sans-serif;
-    margin-top: 10px;
     display: block;
-    color: #3f495a
+    color: #3f495a;
+    margin-bottom: 40px;
 }
 
-.block1 p2 {
-    text-align: left;
-    font-size: 17px;
-    font-family: 'Calibri', sans-serif;
-    margin-top: 22px ;
-    display: block;
-    color: #3f495a
-}
 
-.block1 button {
+.about_me_block button {
     height: 32px;
     width: 180px;
     border: 2px solid #6f707e;
@@ -160,19 +147,15 @@ nav {
     font-size: 12px;
     font-family: 'FranklinGot', sans-serif;
     padding: 0px 12px 0px 12px;
-    margin-top: 38px ;
     overflow: hidden;
     position: relative;
     cursor: pointer;
 }
 
-.block1 img {
-    margin-right: 10px;
-}
+
 
 .skills_container {
     width: 100%;
-    height: 522px;
     background: url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/bg2.jpg) center/cover no-repeat;
 }
 
@@ -188,8 +171,7 @@ nav {
 
 .skills {
     margin-top: 4%;
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 2%;
 
 }
 
@@ -207,29 +189,31 @@ nav {
 .skills p {
     font-size: 17px;
     display: block;
-    margin-top: 20px;
+    margin: 20px auto;
     color: #4e5766;
     text-align: center;
     font-family: 'Calibri', sans-serif;
+    width: 230px;
 }
 
 .skill {
-    text-align: center;
+    float: left;
     display: block;
-    width: 210px;
+    
     -webkit-animation: leftshift 1s ease forwards;
     -o-animation: leftshift 1s ease forwards;
     animation: leftshift 1s ease forwards;
     opacity: 0;
 }
 
-.block3 {
+
+.cases {
     width: 100%;
     height: 1200px;
     background: url(../img/underline.png) 50% 160px/auto no-repeat;
 }
 
-.block3 h2 {
+.cases h2 {
     font-size: 33px;
     font-family: 'FranklinGot', sans-serif;
     color: #263244;
@@ -239,8 +223,8 @@ nav {
     font-weight: bold;
 }
 
-.block3 p {
-    text-align: center;
+.cases p {
+    
     font-family: 'Calibri', sans-serif;
     display: block;
     font-size: 17px;
@@ -256,15 +240,9 @@ nav {
     float: left;
     text-align: center;
 }
-.info1{
-    width: 300px;
-}
-.info2{
-    width: 850px;
-    margin-left: 68px;
-}
+
+
 .info h4 {
-    float: left;
     font-size: 25px;
     text-transform: uppercase;
     color: #384354;
@@ -277,7 +255,6 @@ nav {
     font-size: 17px;
     color: #4e5766;
     margin: 14px 0px 15px 0px;
-    text-align: left;
 }
 .info2 p {
     font-size: 20px;
@@ -293,7 +270,7 @@ nav {
     margin: 0px 0px 0px 0px;
     width: 202px;
     display: block;
-    margin-top: 130px;
+    margin-top: 75px;
 }
 
 .info2 {
@@ -302,9 +279,9 @@ nav {
 }
 
 .calculator {
-    width: 100%;
-    height: 1500px;
-    padding: 300px;
+    margin-top: 100px;
+    height: 1050px;
+
 
 }
 
@@ -333,9 +310,6 @@ nav {
     font-weight: bold;
     margin-top: 50px;
     width: 870px color: #1c2534;
-}
-.calcline{
-    padding-top: 35px;
 }
 .calculator select {
     height: 58px;
@@ -382,21 +356,21 @@ nav {
 }
 
 .stats {
-    height: 499px;
+    height: 100%;
     width: 100%;
+    padding-bottom: 45px;
     background: url(../img/bg3.jpg) center/cover fixed no-repeat;
 }
 
 .mystats {
-    margin: 100px 250px;
-    display: flex;
-    justify-content: space-between;
-    font-weight: bolder;
+    margin-top: 100px;
+
 }
 
 .stat {
+    float: left;
     display: block;
-    text-align: center;
+    font-weight: bold;
 }
 
 .stat img {
@@ -421,15 +395,15 @@ nav {
 .stats b {
     font-size: 37px;
     font-weight: bold;
-    margin: 33px 0px 33px 0px;
+    margin: 31px 0px 31px 0px;
     display: block;
 }
 
 .comments {
     
-    height: 592px;
+    height: 100%;
     width: 100%;
-    background: url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/boy3.png) 50% 50%/auto no-repeat;
+    background: url(../img/underline.png) 50% 160px/auto no-repeat;
 }
 
 .comments h2 {
@@ -440,18 +414,18 @@ nav {
     text-transform: uppercase;
     font-weight: bold;
 }
-
+.comments img {
+    margin: 50px;
+}
 .comment1 {
-    text-align: center;
-    margin: 233px 615px 0px 615px;
+    
+    margin-top: 0px;
     display: block;
     color: #243042;
 }
 
 .peoples {
-    display: block;
-    text-align: center;
-    margin: 36px 842px;
+    margin-top: 36px;
     font-size: 16px;
     color: #243042;
 }
@@ -465,11 +439,13 @@ nav {
     vertical-align: middle;
     color: #fff;
     text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
 }
 
 .contacts {
     width: 100%;
-    height: 808px;
+    height: 100%;
     background: url(../img/underline.png) 50% 160px/auto no-repeat, url(../img/bg4.jpg) 100%/auto no-repeat;
 }
 
@@ -487,23 +463,18 @@ nav {
     color: white;
     font-size: 15.33px;
     display: block;
-    text-align: center;
     font-family: 'Calibri', sans-serif;
 }
 
 .my_info {
-    margin-top: 25px;
-    margin-left: 653px;
-    margin-right: 653px;
-    display: flex;
-    justify-content: space-between;
+    display: block;
 }
 
 .mycontact {
+    float: left;
     font-size: 16px;
     display: block;
     color: white;
-    text-align: center;
     text-overflow: 10px;
     font-family: 'Calibri', sans-serif;
 }
@@ -523,34 +494,66 @@ nav {
 }
 
 .anketa {
-    float: left;
-    width: 100%;
-    text-align: center;
+    justify-content: space-between;
     margin-top: 44px;
+   padding-bottom: ;
+    margin: 0 auto;
 }
-
-.anketa input {
-    width: 352px;
+.name{
+    float: left;
+    margin-right: 15px;
+}
+.mail{
+    float: left;
+    margin-left: 15px;
+}
+.name input{
     height: 40px;
     font-size: 16px;
     padding-left: 14px;
     margin: 0px 14px 0px 14px;
     background: rgba(249, 250, 255, 0.80);
+    width: 100%;
+}
+.mail input{
+    height: 40px;
+    font-size: 16px;
+    padding-left: 14px;
+    margin: 0px 14px 0px 14px;
+    background: rgba(249, 250, 255, 0.80);
+    width: 100%;
+}
+.message input{
+    height: 92px;
+    font-size: 16px;
+    padding-left: 14px;
+    margin: 0px 14px 0px 14px;
+    background: rgba(249, 250, 255, 0.80);
+    width: 100%;
+}
+/*.anketa p {
+    float: left;
+}*/
+
+/*.anketa input {
+    height: 40px;
+    font-size: 16px;
+    padding-left: 14px;
+    margin: 0px 14px 0px 14px;
+    background: rgba(249, 250, 255, 0.80);
+    width: 100%;
 }
 
-.anketa {
+/*.anketa {
+    margin-top: 44px;
+    margin: 0 auto;
     color: 5d5d5e;
 }
+*/
 
-.message input {
-    width: 736px;
-    height: 92px;
-    padding-top: 0px;
-}
 
 .send {
-    width: 100%;
-    float: left;
+    padding-bottom: 100px;
     text-align: center;
 }
 
@@ -563,7 +566,8 @@ nav {
     color: white;
     font-size: 13px;
     padding: 0px 16px;
-    margin: 10px 14px 0px 14px;
+    margin-top: 10px;
+    width: 125px;
 }
 
 .map {
@@ -668,19 +672,19 @@ nav {
     }
 }
 
-.block1 button {
+.about_me_block button {
     transition: all 0.5s ease;
     transform: scale(1);
     display: inline-block;
 }
 
-.block1 button:hover {
+.about_me_block button:hover {
     transform: scale(1.2);
     border-color: #e88604;
     color: #e88604;
 }
 
-.block1 button:active {
+.about_me_block button:active {
     border-color: #7b7c88;
     color: #7b7c88;
 }
