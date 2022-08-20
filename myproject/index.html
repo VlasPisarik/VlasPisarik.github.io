@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/font-awesome.css">
 
+
 </head>
 
 <body>
@@ -183,26 +184,32 @@
                                 <h3>Тип сайта</h3>
                                 <select>
                                     <option disable>Выберите пункт...</option>
-                                    <option>Сайт1</option>
-                                    <option>Сайт2</option>
-                                    <option>Сайт3</option>
+                                    <option>Сайт-визитка</option>
+                                    <option>Корпоративный сайт</option>
+                                    <option>Интернет-магазин</option>
                                 </select>
                                 <h3>Дизайн</h3>
                                 <select>
                                     <option disable>Выберите пункт...</option>
-                                    <option>Дизайн1</option>
-                                    <option>Дизайн2</option>
-                                    <option>Дизайн3</option>
+                                    <option>Шаблон</option>
+                                    <option>Уникальный</option>
+                                    <option>Специальный</option>
                                 </select>
                                 <h3>Адаптивность</h3>
                                 <select>
                                     <option disable>Выберите пункт...</option>
-                                    <option>Адаптивность1</option>
-                                    <option>Адаптивность2</option>
-                                    <option>Адаптивность3</option>
+                                    <option>Персональный компьютер</option>
+                                    <option>Мобильные устройства</option>
+                                    <option>Пк + мобильные устройства</option>
                                 </select>
-                                <p class="calcline">Сроки 0</p>
-                                <p>Стоимость 0</p>
+                                <div class="days">
+                                    <p class="text">Сроки</p>
+                                    <p class="numbers">0</p>
+                                </div>
+                                <div class="price">
+                                    <p class="text">Стоимость</p>
+                                    <p class="numbers">0</p>
+                                </div>
                                 <button type="sumbit">
                                     Оставить заявку</button>
                             </div>
@@ -246,7 +253,7 @@
                 <h2>Отзывы</h2>
                 <div class="row text-center justify-content-center">
                     <div class="col-8">
-                       <img src="src/img/boy3.png">
+                        <img src="src/img/boy3.png">
                         <p class="comment1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eum libero voluptate quia inventore doloremque reiciendis omnis perspiciatis commodi impedit quaerat consequatur ad ipsa, explicabo temporibus qui, vel earum quidem ipsam. Incidunt.</p>
                         <p class="peoples"><b>Михаил</b>, ген директор ПАО"Газпром"</p>
                     </div>
@@ -269,46 +276,50 @@
             </div>
         </section>
         <section class="contacts">
-            <div class="contacts ">
+
+            <div class="contacts_container container">
+
                 <h2>Мои контакты</h2>
                 <p class="contact_info text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ea!</p>
                 <div class="container">
                     <div class="row justify-content-center text-center mt-5">
 
-                        <div class="mycontact col-2">
+                        <div class="mycontact col-12 col-md-4 col-lg-3">
                             <img src="src/img/geo.png ">
                             <p>Санкт Петербург<br>Невский проспект</p>
                         </div>
-                        <div class="mycontact col-2">
+                        <div class="mycontact col-12 col-md-4 col-lg-3 mt-4 mt-md-0">
                             <img src="src/img/convert.png">
                             <p>info@companyname.com</p>
                         </div>
-                        <div class="mycontact col-2">
+                        <div class="mycontact col-12 col-md-4 col-lg-3 mt-4 mt-md-0">
                             <img src="src/img/tel.png">
                             <p>+7 999 999-99-99</p>
 
                         </div>
+
                     </div>
                 </div>
                 <h4>Оставьте мне сообщение</h4>
-                <div class="container">
+                
                     <div class="row  d-block mt-5">
-                        <div class="anketa col-8">
-                            <div class="name col-4">
-                                <p ><input type="text" placeholder="Имя"></p>
-                               </div> <div class="mail col-4 float-left">
-                                <p ><input type="text" placeholder="Email"></p>
-                            </div>
-                            <div class="message">
-                                <p><input type="textarea" placeholder="Сообщение"></p>
-                            </div>
+                        <div class="anketa_inputs row justify-content-center text-center">
+                            <div class="name col-12 col-sm-4"> <input type="text" placeholder="Имя"> </div>
+                            <div class="mail col-12 col-sm-4"> <input type="text" placeholder="Email"> </div>
                         </div>
+                        <div class="message row justify-content-center text-center">
+                           <div class="message_input col-12 col-sm-8">
+                               <input type="textarea" placeholder="Сообщение"></div>
+                        </div>
+                        
+
                     </div>
+               
+                <div class="send d-block">
+                    <div class="send_button row justify-content-center text-center"><input type="submit" vallue="отправить"></div>
                 </div>
-                <div class="send">
-                    <p><input type="submit" vallue="отправить"></p>
-                </div>
-            </div>
+ </div>
+            
         </section>
         <div class="map">
             <script>
@@ -332,6 +343,7 @@
         </div>
 
     </footer>
+    <script src="src/js/myscript.js"></script>
     <script src="src/js/bootstrap.bundle.min.js"></script>
 </body>
 
