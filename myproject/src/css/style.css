@@ -107,6 +107,21 @@ nav {
     cursor: pointer;
 }
 
+.title button {
+    transition: all 0.5s;
+    transform: scale(1)
+}
+
+.title button:hover {
+    color: white;
+    background: #344051;
+    border: 2px solid #344051;
+}
+
+.title button:active { 
+    transform: scale(1.1)
+}
+
 .about_me_block{
     
     
@@ -152,6 +167,22 @@ nav {
     cursor: pointer;
 }
 
+.about_me_block button {
+    transition: all 0.5s ease;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.about_me_block button:hover {
+    transform: scale(1.2);
+    border-color: #e88604;
+    color: #e88604;
+}
+
+.about_me_block button:active {
+    border-color: #7b7c88;
+    color: #7b7c88;
+}
 
 
 .skills_container {
@@ -196,14 +227,36 @@ nav {
     width: 230px;
 }
 
-.skill {
+.skill.element-animation{
     float: left;
     display: block;
-    
-    -webkit-animation: leftshift 1s ease forwards;
-    -o-animation: leftshift 1s ease forwards;
-    animation: leftshift 1s ease forwards;
+    transform: translateX(100px);
+    transition: all 0.3s ease 0s;
     opacity: 0;
+}
+
+.skill.element-animation:nth-child(1).show-animation{
+    transform: translateX(0);
+    transition: all 0.8s ease 0s;
+    opacity: 1;
+}
+
+.skill.element-animation:nth-child(2).show-animation{
+    transform: translateX(0);
+    transition: all 0.8s ease 0.4s;
+    opacity: 1;
+}
+
+.skill.element-animation:nth-child(3).show-animation{
+    transform: translateX(0);
+    transition: all 0.8s ease 0.8s;
+    opacity: 1;
+}
+
+.skill.element-animation:nth-child(4).show-animation{
+    transform: translateX(0);
+    transition: all 0.8s ease 1.2s;
+    opacity: 1;
 }
 
 
@@ -272,6 +325,16 @@ nav {
     display: block;
     margin-top: 75px;
 }
+
+.info button {
+    transition: all 0.3s ease;
+}
+
+.info button:hover {
+    color: #fff;
+    background: #008c86;
+}
+
 
 .info2 {
     float: left;
@@ -361,6 +424,15 @@ nav {
     margin-right: auto;
 }
 
+.calculator button {
+    transition: all 0.3s ease;
+}
+
+.calculator button:hover {
+    color: #fff;
+    background: #008c86;
+}
+
 .stats {
     height: 100%;
     width: 100%;
@@ -412,6 +484,13 @@ nav {
     background: url(../img/underline.png) 50% 160px/auto no-repeat;
 }
 
+.comments_slider{
+    display: block;
+    margin-top: 50px;
+    padding: 0px 100px 100px 100px;
+    text-align: center;
+}
+
 .comments h2 {
     font-size: 33px;
     color: #263244;
@@ -424,10 +503,9 @@ nav {
     margin: 50px;
 }
 .comment1 {
-    
-    margin-top: 0px;
     display: block;
     color: #243042;
+    padding: 0px 100px 0px 100px;
 }
 
 .peoples {
@@ -436,17 +514,57 @@ nav {
     color: #243042;
 }
 
-.radio1 {
-    width: 100%;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: capitalize;
-    vertical-align: middle;
-    color: #fff;
-    text-align: center;
-    margin-top: 50px;
-    padding-bottom: 50px;
+.slick-list {
+    overflow: hidden;   
+}
+
+.slick-track{
+     display: flex;
+}
+
+.comments_slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comments_slider .slick-dots li{
+    list-style: none;
+}
+/* Активная точка */
+.comments_slider .slick-dots li.slick-active button{
+    background-color: #e46500;
+}
+
+
+.comments_slider .slick-dots button{
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #cfd3d8;
+    border-radius: 50%;
+    margin: 10px;
+    margin-top: 35px;
+    
+    
+}
+
+.comments_slider{
+    position: relative;
+}
+
+.comments_slider .slick-arrow{
+  position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0px;
+}
+
+.comments_slider .slick-arrow.slick-prev{
+    left: 0;
+}
+
+.comments_slider .slick-arrow.slick-next{
+    right: 0;
 }
 
 .contacts {
@@ -547,6 +665,27 @@ nav {
     padding: 0px 16px;
     margin-top: 10px;
     width: 125px;
+    font-family: sans-serif;
+}
+
+.send input {
+    transition: all 0.2s ease;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.send input:hover {
+    transform: scale(1.2);
+    color: #e88604;
+    border: 2px solid #e88604;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.send input:active {
+    border-color: white;
+    color: #7b7c88;
+    color: white;
 }
 
 .map {
@@ -583,19 +722,7 @@ nav {
     ;
 }
 
-.title button {
-    transition: all 0.5s;
-    transform: scale(1)
-}
 
-.title button:hover {
-    color: white;
-    background: #344051;
-}
-
-.title button:active {
-    transform: scale(1.1)
-}
 
 @keyframes coming {
     from {
@@ -651,50 +778,8 @@ nav {
     }
 }
 
-.about_me_block button {
-    transition: all 0.5s ease;
-    transform: scale(1);
-    display: inline-block;
-}
 
-.about_me_block button:hover {
-    transform: scale(1.2);
-    border-color: #e88604;
-    color: #e88604;
-}
 
-.about_me_block button:active {
-    border-color: #7b7c88;
-    color: #7b7c88;
-}
-
-@keyframes leftshift {
-    from {
-        opacity: 0;
-        margin-left: -1000px;
-    }
-
-    to {
-        opacity: 1;
-        margin-left: 0px;
-    }
-}
-
-.skill:nth-child(2) {
-    animation-delay: 1s;
-}
-
-.skill:nth-child(3) {
-    animation-delay: 2s;
-}
-
-.skill:nth-child(4) {
-    animation-delay: 3s;
-}
-
-.skill:nth-child(5) {
-    animation-delay: 4s;
-}
 
 .white-btn:visited{
     color: #fff;
@@ -730,3 +815,4 @@ nav {
     border-top: 2px solid #d6d6d6;
     margin-bottom: 25px;
 }
+
