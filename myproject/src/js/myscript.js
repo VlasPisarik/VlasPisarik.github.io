@@ -1,40 +1,31 @@
-/*$('.count').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter:$(this).text() 
-    },{
-        duration: 4000,
-        easing: 'swing',
-        step:function(now){
-        $(this).text(Math.ceil(now));
-        }
-    });
-});*/
-
-
-
-
-
-var number = document.querySelector('.count'),
-		numberTop = number.getBoundingClientRect().top,
-    start = +number.innerHTML, end = +number.dataset.max;
-
-window.addEventListener('scroll', function onScroll() {
-		if(window.pageYOffset > numberTop - window.innerHeight / 2) {
-    		this.removeEventListener('scroll', onScroll);
-        var interval = setInterval(function() {
-        		number.innerHTML = ++start;
-            if(start == end) {
-            		clearInterval(interval);
-            }
-        }, 5);
-    }
-});
-
-
-
 
 
 $(document).ready(function(){
+
+    //анимация цифр
+for(let i of document.querySelectorAll('.count')){
+    
+    let numberTop = i.getBoundingClientRect().top,
+    start = +i.innerHTML, 
+    end = +i.dataset.max;
+
+    window.addEventListener('scroll', function onScroll() {
+		if(window.pageYOffset > numberTop - window.innerHeight / 5) {
+    		this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function() {
+        		i.innerHTML = ++start;
+            if(start == end) {
+            		clearInterval(interval);
+            }
+        }, 1);
+    }
+});
+}
+
+
+
+//анимация скилов
+
     
    let options = {threshold: [0.5]};
     let observer = new IntersectionObserver(onEntry, options);
@@ -44,9 +35,6 @@ $(document).ready(function(){
     });
     
     
-});
-
-
 
 function onEntry (entry){
     entry.forEach(change => {
@@ -57,45 +45,57 @@ function onEntry (entry){
 };
 
 
+//сдайдер комментариев
 
-$(document).ready(function(){
     $('.comments_slider').slick({
         arrows:false,
         dots:true,
     });
+    
+//калькулятор 
+    function calculate(){
+        let sum = parseInt($('#select1 option:selected').val()) + parseInt($('#select2 option:selected').val()) + parseInt($('#select3 option:selected').val()) ;
+        let days = parseInt($('#select1 option:selected').attr('days')) + parseInt($('#select2 option:selected').attr('days')) + parseInt($('#select3 option:selected').attr('days'));
+        $('.days .numbers').text(days);
+        $('.price .numbers').text(sum);
+    }
+    $('select').on('change',function(){
+        calculate();
+    });
+    calculate();
+
+
+//всплывающий попап
+    
+$(window).on('load', function () { 
+	setTimeout(function(){
+		if($('.js-overlay-campaign').hasClass('disabled')) {
+			return false;
+		} else {
+			
+			$(".js-overlay-campaign").fadeIn();
+		}
+	}, 10000);
 });
 
-/*
-let website = {
-    "сайт визитка": 1500,
-    "корпоративный сайт": 2000,
-    "интернет магазин": 3000,
-};
+$('.js-close-campaign').click(function() { 
+	$('.js-overlay-campaign').fadeOut();
+	
+});
 
-let key1 = prompt("Ваш тип сайта","сайт визитка, корпоративный сайт, интернет магазин")
+$(document).mouseup(function (e) { 
+	var popup = $('.js-popup-campaign');
+	if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+		$('.js-overlay-campaign').fadeOut();
+		
+	}
+});
 
-alert( website[key1] );
 
-let design = {
-    "шаблон": 1500,
-    "уникальный": 2000,
-    "специальный": 3000,
-};
+});
 
-let key2 = prompt("Какой дизайн?", "шаблон, уникальный, специальный")
 
-alert( design[key2] );
-
-let adapt = {
-    "пк": 1000,
-    "телефон": 2000,
-    "пк + гаджет": 3000,
-};
-
-let key3 = prompt("Где бы вы хотели использовать ваш сайт?", "пк, телефон, пк + гаджет")
-
-alert( adapt[key3] );
-
-alert( website[key1] + design[key2] + adapt[key3] );
-
-})*/
+//попап
+$('.carousel-item').magnificPopup({
+ type: 'image'
+});

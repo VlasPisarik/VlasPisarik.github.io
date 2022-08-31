@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/font-awesome.css">
+    <link rel="stylesheet" href="src/css/magnific-popup.css">
 
 
 </head>
@@ -136,13 +137,18 @@
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="src/img/site2.jpeg" class="d-block w-100" alt="...">
+                                 <a href="src/img/site2.jpeg">
+                                    <img src="src/img/site2.jpeg" class="d-block w-100" alt="..."></a>
                                 </div>
+                                
                                 <div class="carousel-item">
-                                    <img src="src/img/site3.jpeg" class="d-block w-100" alt="...">
+                                   <a href="src/img/site3.jpeg">
+                                    <img src="src/img/site3.jpeg" class="d-block w-100" alt="..."></a>
                                 </div>
+                                
                                 <div class="carousel-item">
-                                    <img src="src/img/site4.jpeg" class="d-block w-100" alt="...">
+                                   <a href="src/img/site4.jpeg">
+                                    <img src="src/img/site4.jpeg" class="d-block w-100" alt="..."></a>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -184,33 +190,35 @@
                             <div class="calculator_inside">
                                 <h2>Расчёт стоимости</h2>
                                 <h3>Тип сайта</h3>
-                                <select>
-                                    <option disable>Выберите пункт...</option>
-                                    <option>Сайт-визитка</option>
-                                    <option>Корпоративный сайт</option>
-                                    <option>Интернет-магазин</option>
+                                <select id="select1">
+                                    <option value="0" days="0" disable>Выберите пункт...</option>
+                                    <option value="1500" days="2">Сайт-визитка</option>
+                                    <option value="2000" days="3">Корпоративный сайт</option>
+                                    <option value="3000" days="4">Интернет-магазин</option>
                                 </select>
                                 <h3>Дизайн</h3>
-                                <select>
-                                    <option disable>Выберите пункт...</option>
-                                    <option>Шаблон</option>
-                                    <option>Уникальный</option>
-                                    <option>Специальный</option>
+                                <select id="select2">
+                                    <option value="0" days="0" disable>Выберите пункт...</option>
+                                    <option value="1000" days="2">Шаблон</option>
+                                    <option value="1500" days="3">Уникальный</option>
+                                    <option value="2000" days="4">Специальный</option>
                                 </select>
                                 <h3>Адаптивность</h3>
-                                <select>
-                                    <option disable>Выберите пункт...</option>
-                                    <option>Персональный компьютер</option>
-                                    <option>Мобильные устройства</option>
-                                    <option>Пк + мобильные устройства</option>
+                                <select id="select3">
+                                    <option value="0" days="0" disable>Выберите пункт...</option>
+                                    <option value="1350" days="1">Персональный компьютер</option>
+                                    <option value="1400" days="2">Мобильные устройства</option>
+                                    <option value="1500" days="3">Пк + мобильные устройства</option>
                                 </select>
                                 <div class="days">
                                     <p class="text">Сроки</p>
                                     <p class="numbers">0</p>
+                                    <div class="clear"></div>
                                 </div>
                                 <div class="price">
-                                    <p class="text">Стоимость</p>
-                                    <p class="numbers">0</p>
+                                    <div class="text">Стоимость</div>
+                                    <div class="numbers">0</div>
+                                    <div class="clear"></div>
                                 </div>
                                 <button type="sumbit">
                                     Оставить заявку</button>
@@ -334,6 +342,7 @@
             </script>
         </div>
     </main>
+    
     <footer>
         <div class="footer1">
             <p>Copyright 2021 Андрей Браун. Design by Web</p>
@@ -342,8 +351,15 @@
     </footer>
     <script src="src/js/jquery-3.6.0.min.js"></script>
     <script src="src/js/bootstrap.bundle.min.js"></script>
-    <script src="src/js/myscript.js"></script>
     <script src="src/js/slick.min.js"></script>
+    <script src="src/js/jquery.magnific-popup.min.js"></script>
+    <script src="src/js/jquery.magnific-popup.js"></script>
+    <script src="src/js/myscript.js"></script>
+    <div class="overlay js-overlay-campaign"><div class="popup js-popup-campaign">
+        <h2>Привет, это я !</h2>
+        Ты задержался на моей странице XD.
+        <div class="close-popup js-close-campaign"></div>
+    </div></div>
     <div class="preloader">
     <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #2C3E50 url(http://hello-site.ru//main/images/preloads/oval.svg) center center no-repeat;background-size:85px;}</style>
     <div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
